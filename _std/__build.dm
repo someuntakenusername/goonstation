@@ -39,7 +39,7 @@ o+`        `-` ``..-:yooos-..----------..`
 #define SKIP_PLANETS_SETUP // Skip planet generation (for Artemis)
 //#define SKIP_CAMERA_COVERAGE // Skip calculating security camera coverage
 #define IM_TESTING_SHIT_STOP_BARFING_CHANGELOGS_AT_ME // Skip changelogs
-//#define I_DONT_WANNA_WAIT_FOR_THIS_PREGAME_SHIT_JUST_GO // Automatically ready up and start the game ASAP. No input required.
+#define I_DONT_WANNA_WAIT_FOR_THIS_PREGAME_SHIT_JUST_GO // Automatically ready up and start the game ASAP. No input required.
 
 //////--- CONVENIENCE OPTIONS FOR TESTING ETC ---//
 #define DEBUG_EVERYONE_GETS_CAPTAIN_ID // all IDs are captain rank, kept separate from below options to avoid disrupting access-related tests
@@ -164,7 +164,7 @@ o+`        `-` ``..-:yooos-..----------..`
 
 //------ HOLIDAYS AND OTHER SUCH TOGGLES ------//
 
-//#define RP_MODE 1
+#define RP_MODE 1
 //#define HALLOWEEN 1
 //#define SEASON_WINTER 1
 //#define SEASON_SPRING 1
