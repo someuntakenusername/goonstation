@@ -46,16 +46,6 @@
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
 /turf/simulated/floor/plating,
 /area/space)
-"bn" = (
-/obj/decal/tile_edge/line/black{
-	dir = 5;
-	icon_state = "line2"
-	},
-/obj/machinery/status_display{
-	pixel_y = 32
-	},
-/turf/simulated/floor/carpet,
-/area/station/crew_quarters/quarters_east)
 "bo" = (
 /obj/forcefield/energyshield/perma,
 /turf/simulated/floor/engine/vacuum,
@@ -232,7 +222,8 @@
 	},
 /obj/machinery/light/incandescent/small{
 	dir = 8;
-	pixel_x = -12
+	pixel_x = -12;
+	nostick = 1
 	},
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
@@ -296,10 +287,6 @@
 	icon_state = "line2"
 	},
 /obj/machinery/light/emergency,
-/obj/item/reagent_containers/food/drinks/bottle/empty/masculine{
-	pixel_y = 8;
-	pixel_x = 12
-	},
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "dE" = (
@@ -542,11 +529,11 @@
 /turf/simulated/floor,
 /area/station/devzone)
 "gk" = (
-/obj/machinery/vending/cola/blue,
 /obj/machinery/light/emergency{
 	dir = 1;
 	pixel_y = 20
 	},
+/obj/machinery/vending/cola/red,
 /turf/simulated/floor/black,
 /area/station/crew_quarters/quarters_east)
 "gt" = (
@@ -690,10 +677,6 @@
 	},
 /turf/simulated/floor/airless/engine/glow/blue,
 /area/station/devzone)
-"hL" = (
-/obj/decal/poster/wallsign/poster_mining,
-/turf/simulated/wall/auto/supernorn,
-/area/station/crew_quarters/quarters_east)
 "hM" = (
 /obj/machinery/atmospherics/binary/valve,
 /turf/simulated/floor,
@@ -932,6 +915,8 @@
 	icon_state = "line2"
 	},
 /obj/machinery/light/emergency,
+/obj/stool/pet_bed,
+/obj/random_item_spawner/critter/one,
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "jB" = (
@@ -1258,7 +1243,10 @@
 	pixel_x = -12
 	},
 /obj/table/wood/auto,
-/obj/machinery/computer3/luggable,
+/obj/machinery/computer3/luggable{
+	pixel_y = 8;
+	layer = 3.03
+	},
 /obj/decal/tile_edge/line/black{
 	dir = 8;
 	icon_state = "line1"
@@ -1380,12 +1368,6 @@
 	},
 /turf/simulated/floor/airless/engine/glow/blue,
 /area/station/devzone)
-"nz" = (
-/obj/mapping_helper/firedoor_spawn,
-/obj/machinery/door/airlock/pyro/glass,
-/obj/decal/stripe_delivery,
-/turf/simulated/floor/black/grime,
-/area/station/crew_quarters/quarters_east)
 "nB" = (
 /obj/cable{
 	icon_state = "0-8"
@@ -1626,7 +1608,9 @@
 	},
 /obj/table/wood/auto,
 /obj/machinery/light/lamp/black,
-/obj/decal/cleanable/desk_clutter,
+/obj/decal/cleanable/desk_clutter{
+	pixel_y = 16
+	},
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "pF" = (
@@ -1724,6 +1708,7 @@
 /area/station/devzone)
 "qj" = (
 /obj/machinery/atmospherics/unary/tank/air_repressurization,
+/obj/decal/cleanable/rust/jen,
 /turf/simulated/floor/plating/jen,
 /area/station/crew_quarters/quarters_east)
 "ql" = (
@@ -1839,11 +1824,15 @@
 "rE" = (
 /obj/mapping_helper/firedoor_spawn,
 /obj/decal/stripe_delivery,
-/obj/machinery/door/airlock/pyro/glass,
+/obj/machinery/door/airlock/pyro/alt{
+	dir = 1
+	},
 /turf/simulated/floor/black/grime,
 /area/station/crew_quarters/quarters_east)
 "rG" = (
-/obj/machinery/light,
+/obj/machinery/light{
+	nostick = 0
+	},
 /turf/simulated/floor/plating,
 /area/space)
 "rI" = (
@@ -2227,7 +2216,21 @@
 	dir = 9;
 	icon_state = "line2"
 	},
-/obj/item/clothing/head/fedora,
+/obj/item/clothing/head/fedora{
+	pixel_y = -8;
+	pixel_x = -4;
+	layer = 3.02
+	},
+/obj/item/reagent_containers/food/snacks/chips{
+	pixel_y = 8;
+	pixel_x = 4;
+	layer = 2.9
+	},
+/obj/item/reagent_containers/food/drinks/bottle/soda/red{
+	pixel_y = -8;
+	pixel_x = 8;
+	layer = 2.9
+	},
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "ut" = (
@@ -2846,6 +2849,18 @@
 	pixel_x = -12
 	},
 /obj/table/wood/auto,
+/obj/item/clothing/head/flatcap{
+	pixel_y = -4;
+	pixel_x = -4;
+	layer = 2.9
+	},
+/obj/item/clothing/glasses/sunglasses/tanning{
+	pixel_y = -12
+	},
+/obj/item/reagent_containers/food/drinks/mug/random_color{
+	pixel_y = 8;
+	pixel_x = 4
+	},
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "zU" = (
@@ -2892,7 +2907,8 @@
 /obj/stool/bed,
 /obj/machinery/light/incandescent/small{
 	dir = 8;
-	pixel_x = -12
+	pixel_x = -12;
+	nostick = 1
 	},
 /obj/decal/cleanable/vomit,
 /obj/decal/cleanable/dirt/dirt5,
@@ -2910,6 +2926,7 @@
 /obj/item/raw_material/shard/glass{
 	layer = 2
 	},
+/obj/decal/cleanable/cobweb,
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "Al" = (
@@ -2936,6 +2953,20 @@
 	},
 /turf/simulated/floor,
 /area/station/devzone)
+"Ay" = (
+/obj/decal/tile_edge/line/black{
+	dir = 1;
+	icon_state = "line1"
+	},
+/obj/storage/crate,
+/obj/decal/poster/wallsign/poster_mining{
+	pixel_y = 32
+	},
+/obj/item/clothing/head/apprentice,
+/obj/item/clothing/suit/cultist/nerd,
+/obj/item/clothing/under/gimmick/maid,
+/turf/simulated/floor/carpet,
+/area/station/crew_quarters/quarters_east)
 "AA" = (
 /obj/machinery/light{
 	dir = 1;
@@ -3104,6 +3135,11 @@
 /obj/item/cigbutt{
 	pixel_x = -8;
 	pixel_y = 11
+	},
+/obj/item/reagent_containers/food/drinks/bottle/empty/masculine{
+	pixel_y = 4;
+	pixel_x = -8;
+	layer = 2.98
 	},
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
@@ -3490,6 +3526,7 @@
 /obj/blind_switch/north{
 	id = "cabin1"
 	},
+/obj/decal/cleanable/cobweb2,
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "EY" = (
@@ -3651,6 +3688,14 @@
 	icon_state = "engine_caution_north"
 	},
 /area/station/devzone)
+"GC" = (
+/obj/decal/tile_edge/line/black{
+	dir = 1;
+	icon_state = "line1"
+	},
+/obj/iv_stand,
+/turf/simulated/floor/carpet,
+/area/station/crew_quarters/quarters_east)
 "GH" = (
 /obj/machinery/light{
 	dir = 8;
@@ -3672,10 +3717,10 @@
 	icon_state = "line1"
 	},
 /obj/table/wood/auto/desk,
-/obj/decal/cleanable/robot_debris{
-	pixel_y = 12
-	},
 /obj/mapping_helper/turf/floor/burner,
+/obj/machinery/computer/security/wooden_tv/small{
+	pixel_y = 8
+	},
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "GQ" = (
@@ -3941,6 +3986,7 @@
 /area/station/devzone)
 "Kc" = (
 /obj/storage/closet/fire,
+/obj/decal/cleanable/rust/jen,
 /turf/simulated/floor/plating/jen,
 /area/station/crew_quarters/quarters_east)
 "Kj" = (
@@ -4338,7 +4384,7 @@
 	pixel_y = 12;
 	pixel_x = 4
 	},
-/obj/random_item_spawner/junk/maybe_few,
+/obj/random_item_spawner/desk_stuff/some,
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "NA" = (
@@ -4493,9 +4539,9 @@
 /turf/simulated/floor,
 /area/station/devzone)
 "OK" = (
-/obj/machinery/door/airlock/pyro/alt,
 /obj/mapping_helper/firedoor_spawn,
 /obj/decal/stripe_delivery,
+/obj/machinery/door/airlock/pyro/maintenance/alt,
 /turf/simulated/floor/sanitary/white,
 /area/station/crew_quarters/quarters_east)
 "ON" = (
@@ -4770,6 +4816,7 @@
 /area/station/devzone)
 "Rs" = (
 /obj/machinery/portable_atmospherics/scrubber,
+/obj/decal/cleanable/cobweb,
 /turf/simulated/floor/plating/jen,
 /area/station/crew_quarters/quarters_east)
 "Rw" = (
@@ -4966,9 +5013,15 @@
 	},
 /obj/stool/bed,
 /obj/item/clothing/suit/bedsheet/black,
+/obj/item/instrument/saxophone{
+	pixel_y = 8;
+	layer = 2.8;
+	pixel_x = -8
+	},
 /obj/machinery/light/incandescent/small{
-	dir = 1;
-	pixel_y = 24
+	dir = 4;
+	pixel_x = 12;
+	nostick = 1
 	},
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
@@ -5236,6 +5289,7 @@
 	dir = 4;
 	pixel_x = 12
 	},
+/obj/random_item_spawner/desk_stuff/g_clip_bin_fpen,
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "VS" = (
@@ -5495,6 +5549,13 @@
 	dir = 5;
 	icon_state = "line2"
 	},
+/obj/random_item_spawner/med_kit/one_or_zero{
+	pixel_y = -4;
+	pixel_x = 8
+	},
+/obj/random_item_spawner/medicine/one_or_zero{
+	pixel_x = -4
+	},
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "YA" = (
@@ -5553,8 +5614,10 @@
 	},
 /obj/machinery/light/incandescent/small{
 	dir = 4;
-	pixel_x = 12
+	pixel_x = 12;
+	nostick = 1
 	},
+/obj/item/clothing/mask/anime,
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
 "YS" = (
@@ -5697,6 +5760,10 @@
 /obj/decal/tile_edge/line/black{
 	dir = 9;
 	icon_state = "line2"
+	},
+/obj/decal/poster/wallsign/poster_eyetest{
+	layer = 28;
+	pixel_y = 32
 	},
 /turf/simulated/floor/carpet,
 /area/station/crew_quarters/quarters_east)
@@ -27079,7 +27146,7 @@ Ih
 Ih
 Ih
 Ih
-xl
+Ci
 qj
 ZL
 Pl
@@ -29194,7 +29261,7 @@ Ih
 Ih
 Ih
 xl
-GL
+GC
 SQ
 hz
 rE
@@ -30401,14 +30468,14 @@ Ih
 Ih
 Ih
 Ih
-hL
-GL
+xl
+Ay
 wg
 hz
-nz
+rE
 GL
 tM
-nz
+rE
 GL
 wg
 ad
@@ -31916,7 +31983,7 @@ YR
 Ci
 zy
 Do
-bn
+tN
 mX
 Do
 tV
